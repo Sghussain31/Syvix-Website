@@ -8,7 +8,7 @@ export default function HomeView() {
   const { setActiveWindow, openContactModal } = useApp();
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
       {/* ── Hero Section ───────────────────────────────────── */}
       <div className="mx-auto max-w-4xl text-center relative glow-wrapper">
         {/* Soft ambient background glows */}
@@ -26,13 +26,13 @@ export default function HomeView() {
         </div>
 
         {/* Hero Headline */}
-        <h1 className="font-display text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-6xl md:text-7xl relative z-10">
+        <h1 className="font-display text-3xl font-extrabold leading-[1.12] tracking-tight md:text-6xl relative z-10">
           <span className="text-gradient-electric block">AI for the Real World.</span>
           <span className="text-slate-900 block mt-2">Driven by Intelligence.</span>
         </h1>
 
         {/* Sub-description */}
-        <p className="mx-auto mt-6 max-w-2xl font-sans text-base leading-relaxed md:leading-[1.8] text-slate-600 sm:text-lg md:mt-8 relative z-10">
+        <p className="mx-auto mt-6 max-w-2xl font-sans text-base md:text-lg leading-relaxed md:leading-[1.8] text-slate-600 md:mt-8 relative z-10">
           Creating impactful AI-driven solutions that improve businesses, industries, and everyday life through innovation, scalability, and intelligent engineering.
         </p>
 
@@ -53,7 +53,7 @@ export default function HomeView() {
         <div className="glow-ambient-blue -top-12 left-10 animate-pulse" style={{ width: "400px", height: "400px", animationDuration: "8s" }} />
         <div className="glow-ambient-purple bottom-10 right-10 animate-pulse" style={{ width: "400px", height: "400px", animationDuration: "10s" }} />
 
-        <div className="grid gap-6 md:grid-cols-3 items-stretch relative z-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch relative z-10">
           
           {/* Card 1: AUTOMATION */}
           <article className="glass-card rounded-2xl p-8 flex flex-col justify-between min-h-[310px]">

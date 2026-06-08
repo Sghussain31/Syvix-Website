@@ -71,7 +71,7 @@ function FooterBtn({
       <button
         type="button"
         onClick={onClick}
-        className="text-sm text-slate-600 transition-colors duration-150 hover:text-[#0066FF] text-left"
+        className="text-sm text-slate-600 transition-colors duration-150 hover:text-[#0066FF] text-center sm:text-left w-full"
       >
         {label}
       </button>
@@ -90,15 +90,15 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-slate-200 bg-[#F8FAFC]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {/* ── 4-Column Top Grid ─────────────────────────────── */}
-        <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 text-slate-600">
+        {/* ── 4-Column Grid ─────────────────────────────── */}
+        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 md:grid-cols-4 lg:gap-8 text-slate-600">
 
           {/* Column 1 — Brand */}
-          <div className="space-y-5">
+          <div className="space-y-5 flex flex-col items-center sm:items-start text-center sm:text-left">
             <button
               type="button"
               onClick={() => setActiveWindow("home")}
-              className="flex items-center gap-2.5 text-left"
+              className="flex items-center gap-2.5"
             >
               <img
                 src="/syvix-logo.png"
@@ -135,7 +135,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2 — Company */}
-          <div>
+          <div className="text-center sm:text-left">
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Company
             </p>
@@ -152,7 +152,7 @@ export default function Footer() {
           </div>
 
           {/* Column 3 — Support */}
-          <div>
+          <div className="text-center sm:text-left">
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Support
             </p>
@@ -168,7 +168,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4 — Legal (wired to openLegalDoc) */}
-          <div>
+          <div className="text-center sm:text-left">
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Legal
             </p>
@@ -188,14 +188,14 @@ export default function Footer() {
         <div className="h-px w-full bg-slate-200" />
 
         {/* ── Bottom Baseline Bar ───────────────────────────── */}
-        <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
           {/* Left: Copyright */}
           <p className="text-xs text-slate-500 leading-relaxed">
             © 2026 SYVIX AI Solutions Private Limited (PVT LTD). All rights reserved. | Registered Startup India Company.
           </p>
 
           {/* Right: Utility links — all wired to legal view */}
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-5 gap-y-2">
             {/* Verify Certificate — placeholder, no legal doc */}
             <button
               type="button"

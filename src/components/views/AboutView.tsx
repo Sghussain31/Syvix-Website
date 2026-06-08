@@ -53,7 +53,7 @@ export default function AboutView() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
       <SectionHeader
         title="What SYVIX Stands For"
         align="left"

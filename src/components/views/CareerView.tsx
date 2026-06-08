@@ -59,7 +59,7 @@ export default function CareerView() {
   const { openInternshipModal } = useApp();
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
       <SectionHeader
         title="Build the Future With Us"
         subtitle="Join our Paid Technical Fellowship & Specialized Internship Program."
@@ -75,7 +75,7 @@ export default function CareerView() {
       </div>
 
       {/* 6 Domain Columns */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch relative glow-wrapper animate-fade-in mt-12">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch relative glow-wrapper animate-fade-in mt-12">
         {/* Soft background ambient glows */}
         <div className="glow-ambient-purple top-10 right-10" />
         <div className="glow-ambient-blue bottom-0 left-0" />

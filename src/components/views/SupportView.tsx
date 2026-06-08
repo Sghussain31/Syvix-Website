@@ -7,7 +7,7 @@ export default function SupportView() {
   const { activeSupportTab, openSupportTab } = useApp();
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
       {/* Page header */}
       <div className="mb-10 md:mb-12">
         <p className="mb-2 font-display text-xs font-bold uppercase tracking-[0.18em] text-slate-500">

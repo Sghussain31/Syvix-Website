@@ -61,7 +61,7 @@ export default function MaintenanceTiers() {
         Select a Package
       </h3>
 
-      <div className="grid gap-6 lg:grid-cols-3 items-stretch relative glow-wrapper">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch relative glow-wrapper">
         {/* Ambient glows */}
         <div className="glow-ambient-blue bottom-10 left-0" />
         <div className="glow-ambient-purple top-0 right-0" />

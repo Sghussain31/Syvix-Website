@@ -66,15 +66,15 @@ export default function BusinessInquiryModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-200"
+        className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-200"
         onClick={handleClose}
       />
 
       {/* Modal Container */}
-      <div className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl transition-all sm:p-8 animate-fade-in z-10">
+      <div className="relative w-[92%] max-w-xl max-h-[90vh] overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl transition-all sm:p-8 animate-fade-in z-10">
         {/* Soft background glow */}
         <div
           className="absolute -right-24 -top-24 h-48 w-48 rounded-full bg-[#0066FF]/5 blur-3xl pointer-events-none"
