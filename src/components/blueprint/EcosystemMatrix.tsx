@@ -34,7 +34,7 @@ export default function EcosystemMatrix() {
       <p className="mb-8 text-center text-sm font-medium tracking-wider text-[#8B949E] uppercase">
         Future Ecosystem Matrix
       </p>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 w-full">
         {ECOSYSTEM.map((item, i) => (
           <article
             key={item.product}

@@ -30,13 +30,13 @@ export default function LegalView() {
   const active = LEGAL_CONTENT[activeLegalDoc];
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
+    <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Page header */}
       <div className="mb-10 md:mb-12">
         <p className="mb-2 font-display text-xs font-bold uppercase tracking-[0.18em] text-slate-500">
           Legal Information
         </p>
-        <h1 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
+        <h1 className="font-display text-xl font-bold tracking-tight text-slate-900 md:text-3xl lg:text-4xl">
           {active.title}
         </h1>
       </div>

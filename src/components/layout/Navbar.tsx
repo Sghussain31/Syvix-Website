@@ -30,7 +30,7 @@ export default function Navbar() {
           : "border-b border-slate-100 bg-white/60 backdrop-blur-sm"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <nav className="w-full max-w-7xl mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Clickable Logo Text without 'LLP' */}
         <button
           type="button"

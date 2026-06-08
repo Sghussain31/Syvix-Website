@@ -8,7 +8,7 @@ export default function HomeView() {
   const { setActiveWindow, openContactModal } = useApp();
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
+    <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* ── Hero Section ───────────────────────────────────── */}
       <div className="mx-auto max-w-4xl text-center relative glow-wrapper">
         {/* Soft ambient background glows */}
@@ -17,22 +17,22 @@ export default function HomeView() {
 
         {/* Hero Logo — centered visual anchor with deep slate ambient backdrop and maximum scale */}
         <div className="relative z-10 flex justify-center mb-10">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-slate-900/15 blur-2xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 md:w-48 h-32 md:h-48 rounded-full bg-slate-900/15 blur-2xl pointer-events-none" />
           <img
             src="/syvix-logo.png"
             alt="SYVIX Brand Icon"
-            className="relative z-10 h-48 sm:h-56 w-auto object-contain filter drop-shadow-[0px_8px_32px_rgba(15,23,42,0.45)] transition-transform duration-300 hover:scale-105"
+            className="relative z-10 w-32 md:w-48 object-contain filter drop-shadow-[0px_8px_32px_rgba(15,23,42,0.45)] transition-transform duration-300 hover:scale-105"
           />
         </div>
 
         {/* Hero Headline */}
-        <h1 className="font-display text-3xl font-extrabold leading-[1.12] tracking-tight md:text-6xl relative z-10">
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.12] tracking-tight relative z-10">
           <span className="text-gradient-electric block">AI for the Real World.</span>
           <span className="text-slate-900 block mt-2">Driven by Intelligence.</span>
         </h1>
 
         {/* Sub-description */}
-        <p className="mx-auto mt-6 max-w-2xl font-sans text-base md:text-lg leading-relaxed md:leading-[1.8] text-slate-600 md:mt-8 relative z-10">
+        <p className="mx-auto mt-6 max-w-2xl font-sans text-sm md:text-base leading-relaxed text-slate-600 md:mt-8 relative z-10">
           Creating impactful AI-driven solutions that improve businesses, industries, and everyday life through innovation, scalability, and intelligent engineering.
         </p>
 

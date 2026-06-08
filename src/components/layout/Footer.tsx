@@ -88,13 +88,13 @@ export default function Footer() {
 
   return (
     <footer className="relative z-10 border-t border-slate-200 bg-[#F8FAFC]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── 4-Column Grid ─────────────────────────────── */}
-        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 md:grid-cols-4 lg:gap-8 text-slate-600">
+        <div className="grid grid-cols-1 text-center sm:text-left sm:grid-cols-2 md:grid-cols-4 gap-10 py-14 lg:gap-8 text-slate-600">
 
           {/* Column 1 — Brand */}
-          <div className="space-y-5 flex flex-col items-center sm:items-start text-center sm:text-left">
+          <div className="space-y-5 flex flex-col items-center sm:items-start">
             <button
               type="button"
               onClick={() => setActiveWindow("home")}
@@ -135,11 +135,11 @@ export default function Footer() {
           </div>
 
           {/* Column 2 — Company */}
-          <div className="text-center sm:text-left">
+          <div>
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Company
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {COMPANY_LINKS.map((link) => (
                 <FooterBtn
                   key={link.view}
@@ -152,11 +152,11 @@ export default function Footer() {
           </div>
 
           {/* Column 3 — Support */}
-          <div className="text-center sm:text-left">
+          <div>
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Support
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {SUPPORT_LINKS.map((link) => (
                 <FooterBtn
                   key={link.id}
@@ -168,11 +168,11 @@ export default function Footer() {
           </div>
 
           {/* Column 4 — Legal (wired to openLegalDoc) */}
-          <div className="text-center sm:text-left">
+          <div>
             <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-900">
               Legal
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {LEGAL_DOCS.map((doc) => (
                 <FooterBtn
                   key={doc.id}

@@ -53,7 +53,7 @@ export default function AboutView() {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
+    <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeader
         title="What SYVIX Stands For"
         align="left"
@@ -136,10 +136,10 @@ export default function AboutView() {
 
       {/* ── Core Values Section ─────────────────────────────── */}
       <div className="mt-20 border-t border-slate-200 pt-16">
-        <h3 className="mb-10 text-center font-display text-2xl font-bold text-slate-900 sm:text-3xl">
+        <h3 className="mb-10 text-center font-display text-xl font-bold text-slate-900 md:text-3xl">
           Our Simple Values
         </h3>
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 w-full">
           {VALUES.map((value) => (
             <article
               key={value.title}

@@ -57,11 +57,11 @@ export default function MaintenanceTiers() {
       <p className="mb-2 text-center text-xs font-bold tracking-wider text-slate-500 uppercase">
         App & Website Packages
       </p>
-      <h3 className="mb-10 text-center font-display text-2xl font-bold text-slate-900 sm:text-3xl">
+      <h3 className="mb-10 text-center font-display text-xl font-bold text-slate-900 md:text-3xl">
         Select a Package
       </h3>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch relative glow-wrapper">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 items-stretch relative glow-wrapper w-full">
         {/* Ambient glows */}
         <div className="glow-ambient-blue bottom-10 left-0" />
         <div className="glow-ambient-purple top-0 right-0" />

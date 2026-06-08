@@ -9,7 +9,7 @@ export default function ProductsView() {
   const { openContactModal } = useApp();
 
   return (
-    <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-12">
+    <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeader
         title="Core Services & Custom Solutions"
         subtitle="High-performance digital tools engineered for individuals, startups, and enterprise operations."

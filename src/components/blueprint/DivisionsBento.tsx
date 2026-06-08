@@ -34,7 +34,7 @@ export default function DivisionsBento() {
       <p className="mb-6 text-xs font-bold tracking-wider text-slate-500 uppercase">
         Tech Capabilities
       </p>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 w-full">
         {DIVISIONS.map((div) => (
           <article
             key={div.name}
